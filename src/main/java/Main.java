@@ -78,6 +78,7 @@ public class Main {
     }
 
     public static int[] earlyTerm(){
+        //К раннему сроку прибавить продолжительность работы (максимум)
         int[] earlyArr = new int[9];
         for (int i = 0; i<9; i++){
             if (i != 0) {
@@ -100,6 +101,7 @@ public class Main {
     }
 
     public static int[] lateTerm(int element){
+        //Из позднего срока свершения события вычесть продолжительность работы (минимальную)
         int[] lateArr = new int[9];
         Arrays.fill(lateArr, element);
         for (int i=7; i>=0; i--){
